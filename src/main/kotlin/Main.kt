@@ -1,7 +1,15 @@
 package com.ll
 
 fun main() {
-    val names = listOf("Alice", "Bob", "Charlie")
+    val person1 = Person("Alice", 25)
 
-    names.forEach { println("name: $it") }
+    println(person1)
+
+    val person2 = Person("Alice", 25)
+
+    if (person1 == person2) {
+        println("ok")
+    }
 }
+
+data class Person(val name: String, val age: Int)
