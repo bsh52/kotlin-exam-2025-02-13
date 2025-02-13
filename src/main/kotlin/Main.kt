@@ -19,8 +19,9 @@ fun main() {
 //    val person1 = Person("Larry", 20)
 //    person1.greet()
 
-    val names = listOf("Juli", "Ali", "Jan")
+    val names = mutableListOf("Juli", "Ali", "Jan")
 
+    names.add("Charlie")
     for (name in names) {
         println(name)
     }
