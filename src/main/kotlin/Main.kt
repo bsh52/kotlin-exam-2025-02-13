@@ -1,7 +1,7 @@
 package com.ll
 
 fun main() {
-    val name: String? = null
+    val names = listOf("Alice", "Bob", "Charlie")
 
-    println(name?.length ?: "Name is Null")
+    names.forEach { println("name: $it") }
 }
