@@ -12,4 +12,20 @@ fun main() {
     for (i in 0 until 3) {
         println("count : $i")
     }
+
+    val result = add(5, 10)
+    println("result = $result")
+
+    val person1 = Person("Larry", 20)
+    person1.greet()
+}
+
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+
+class Person(val name: String, val age: Int) {
+    fun greet() {
+        println("Hello, $name, $age")
+    }
 }
