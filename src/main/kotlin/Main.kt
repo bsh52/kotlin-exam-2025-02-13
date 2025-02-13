@@ -19,11 +19,17 @@ fun main() {
 //    val person1 = Person("Larry", 20)
 //    person1.greet()
 
-    val names = mutableListOf("Juli", "Ali", "Jan")
+//    val names = mutableListOf("Juli", "Ali", "Jan")
+//
+//    names.add("Charlie")
+//    for (name in names) {
+//        println(name)
+//    }
 
-    names.add("Charlie")
-    for (name in names) {
-        println(name)
+    val ages = mapOf("Alice" to 25, "Bob" to 30)
+
+    for ((name, age) in ages) {
+        println("$name, $age")
     }
 }
 
