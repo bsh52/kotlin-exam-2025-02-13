@@ -1,9 +1,10 @@
 package com.ll
 
-fun String.greet() :String {
-    return "Hello $this"
+fun sayHello(name: String = "default") {
+    println("Hello $name!")
 }
 
 fun main() {
-    println("Jay".greet())
+    sayHello("Kotlin")
+    sayHello()
 }
