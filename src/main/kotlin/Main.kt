@@ -1,9 +1,9 @@
 package com.ll
 
 fun main() {
-    val names = listOf("Alice", "Bob", "Charlie")
+    val name: Any = "Kotlin"
 
-    val greetings = names.map { "Hello, $it" }
-
-    greetings.forEach(::println)
+    if (name is String) {
+        println(name.length)
+    }
 }
